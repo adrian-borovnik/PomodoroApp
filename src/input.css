@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	* {
+		@apply select-none duration-500;
+	}
+
+	.background {
+		@apply w-screen h-screen flex flex-col justify-center items-center;
+	}
+
+	.bg-light {
+		@apply bg-neutral-200;
+	}
+
+	.bg-dark {
+		@apply bg-neutral-900;
+	}
+
+	.clock-light {
+		@apply text-neutral-200;
+	}
+
+	.clock-dark {
+		@apply text-neutral-800;
+	}
+
+	.btn {
+		@apply px-6 py-2 rounded-lg font-semibold text-lg;
+	}
+
+	.btn-light {
+		@apply bg-neutral-200 text-neutral-900;
+	}
+
+	.btn-dark {
+		@apply bg-neutral-900 text-neutral-200;
+	}
+}

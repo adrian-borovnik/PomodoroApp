@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <link href="../dist/output.css" rel="stylesheet">
+  <title>Pomodoro</title>
+  <script src="render.js" defer></script>
+
+</head>
+
+<body>
+  <audio id="breakEndSound" src="audio/break-end.mp3"></audio>
+  <audio id="studyingEndSound" src="audio/studying-end.mp3"></audio>
+  <div id="background" class="background bg-light relative">
+    <p id="clock" class="clock-dark font-bold text-[160px]">00:00</p>
+    <div class="w-full flex justify-center items-center gap-4">
+      <button id="mainButton" class="btn btn-dark">Start studying</button>
+      <button id="secButton" class="btn btn-light">Skip studying</button>
+    </div>
+    <dir class="h-4"></dir>
+  </div>
+</body>
+
+</html>
